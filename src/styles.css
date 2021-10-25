@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.gallary-container {
+  padding: 2rem 2rem;
+}
+
+.gallary-item {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background: url(images/scott.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .hero {
+    background: url(images/scott-900-1200.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .gallary-items {
+    display: flex;
+  }
+
+  .gallary-item {
+    width: 350%;
+    padding-right: 5%;
+  }
+
+  .last-img {
+    padding-right: 0%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .hero {
+    background: url(images/scott-1201.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+
+  .gallary-items {
+    display: flex;
+  }
+
+  .gallary-item {
+    width: 350%;
+    padding-right: 5%;
+  }
+
+  .last-img {
+    padding-right: 0%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hero {
+    background: url(images/scott-900-1200.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+
+  .gallary-items {
+    display: flex;
+  }
+
+  .gallary-item {
+    flex-basis: 350%;
+    padding-right: 5%;
+  }
+
+  .last-img {
+    padding-right: 0%;
+  }
+}
